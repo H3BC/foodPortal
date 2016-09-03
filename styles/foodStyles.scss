@@ -1,0 +1,183 @@
+$white: #ffffff;
+$main: #3D9970; /*GREEN*/
+$red: 	#FF0000;
+
+
+body{
+	font-family: 'Lato', sans-serif;
+
+}
+
+
+header{
+	background-image: url('/images/pizzaHeader.jpg');
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size:  cover;
+	margin: 0;
+	padding: 0;
+	height: 50vh;
+	max-height: 50vh;
+	
+
+}
+
+article{
+	padding-top: 7em;
+	font-family: 'Lobster', cursive;
+	h4{
+		color: $red;
+		text-align: center; 
+   		border-bottom: 1px dotted #000; 
+   		line-height: 0.1em;
+   		margin: 10px 0 20px;
+   		span{
+   		 	background:#fff; 
+    		padding:0 10px; 
+			
+   		}
+	}
+}
+
+footer{
+	background: lighten(#000000, 16%);
+}
+
+#steps, #food_photos{
+		padding-top: 4em;
+
+}
+
+#food_photos{
+	margin-bottom:  33em;
+	
+	li{
+		
+		list-style: none;
+		width: 24.4%;
+		float: left;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		transition: transform 0.4s, opacity 0.1s 0.3s;
+		&:hover{
+			.order{
+				opacity: 1;
+				transform: translateY(0px);
+				transition: transform 0.4s, opacity 0.1s 0.3s;
+			}
+			img{
+				transform: scale(1.5);
+				transition: transform 0.4s, opacity 0.1s 0.3s;
+			}
+		};
+
+	}
+	img{
+		height: 27em;
+	}
+	
+}
+
+#footer_content{
+	padding: 5em;
+	color: darken($white,35%);
+	min-height: 230px;
+	li{
+		display: inline-block;
+
+
+	}
+	img{
+		width: 50px;
+		height: 50px;
+		margin: 0px 10px 0px 10px;
+
+	}
+
+
+}
+
+.wrapper{
+	color: $white;
+	font-size: 5em;
+	padding-top: 1.3em;
+}
+
+.ball{
+	background: lighten($main,25%);
+	width: 200px;
+	height: 200px;		
+	border-radius: 100%;
+	font-size: 1.7em;
+	.glyphicon{
+		margin-top: 20%;
+		font-size: 4em;
+		text-align: center;
+		color: $white;
+	}
+}
+
+.order{
+	text-align: center;
+	top: 0;
+	padding: 4.3em;
+	color: $white;
+	position: absolute;
+	background: rgba(lighten($main,30%),0.85);
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transform: translateY(50%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+
+	
+	
+	a{	
+		text-decoration: none;
+		padding: .6em .8em;
+		white-space: nowrap;
+		color: $white;
+		font-size: 1.3em;
+		font-family: 'Tahoma', sans-serif;
+		border: 2px solid $red;
+		border-radius: .5em;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			background: $red;
+
+		};
+
+	}
+
+}
+
+.arrow{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 25px 0 25px 50px;
+margin-left: 220px;
+margin-top: -128px;
+border-color: transparent transparent transparent lighten($red,15%);
+top: 200px;
+bottom: 0;
+}
+
+
+@media only screen and (max-width: 850px){
+	#food_photos{
+		li{
+			width: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: 550px){
+	#food_photos{
+		li{
+			width: 100%;
+		}
+	}
+}
