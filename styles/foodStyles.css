@@ -60,12 +60,25 @@ footer {
   #foodList h1 {
     font-size: 4.2em; }
 
+#payment {
+  padding-bottom: 3em;
+  padding-top: 3em; }
+  #payment form {
+    max-width: 50%;
+    width: 50%;
+    margin: auto;
+    background: #fafafa; }
+  #payment button {
+    padding: auto; }
+  #payment textarea {
+    resize: none; }
+
 #chart {
   position: fixed;
   width: 85%;
   max-width: 25%;
-  top: 7%;
-  padding-top: 20em;
+  top: 5%;
+  padding-top: 19em;
   padding-right: 1em; }
 
 #footer_content {

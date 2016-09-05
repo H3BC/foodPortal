@@ -44,6 +44,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+        .state('payment', {
+			url: '/payment',
+			views: {
+				'@': {
+					templateUrl: '/views/payment.html',
+					controller: 'chartCTRL'
+				}
+			}
+		})
 
 
   $urlRouterProvider.otherwise('/');
