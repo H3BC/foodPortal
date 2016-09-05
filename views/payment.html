@@ -1,28 +1,34 @@
 <section id="payment" class="container">
-	<div class="text-center">
-	<h1 class="text-center">Zamówienie</h1>
-	<h4>Wybrane przysmaki:</h4>
-	</div>
+
+	<h1 class="text-center">Zamówienie</h1>		
 	<h4 class="text-center">Podaj daje kontaktowe:</h4>
+
 	<form class="form-horizontal">
 	<label for="#name">Imie:</label>
-	<input type="text" id="name" class="form-control">
-	<label for="#familyName">Nazwisko:</label>
-	<input type="text" id="familyName" class="form-control">
-	<label for="#address">Adres:</label>
-	<input type="text" id="address" class="form-control">
+	<input type="text" ng-model="receiverData.name" id="name" class="form-control">
+
+	<label for="#familyName" ng-model="receiverData.lastName">Nazwisko:</label>
+	<input type="text" ng-model="receiverData.lastName" id="familyName" class="form-control">
+
+	<label for="#address" >Adres:</label>
+	<input type="text" ng-model="receiverData.address" id="address" class="form-control">
+
 	<label for="#email">Email:</label>
-	<input type="email" id="email" class="form-control">
+	<input type="email" ng-model="receiverData.email" id="email" class="form-control">
+
 	<div class="checkbox text-center">
-    <label><input value="card" name="payWay" type="radio">Płatność kartą</label>
+    <label><input value="card" ng-click="receiverData.payway ='karta'" name="payWay" type="radio">Płatność kartą</label>
     &nbsp
-    <label><input value="cash" name="payWay" type="radio">Płatność gotówką</label>
+    <label><input value="cash" ng-click="receiverData.payway ='gotówka'"  name="payWay" type="radio">Płatność gotówką</label>
+    </div>
     <br><br>
     <label for="#coments"><h4>Uwagi:</h4></label><br>
-    <textarea id="coments" cols="78" rows="5"></textarea><br>
-    <button type="submit" class="btn btn-lg btn-success">Potwierdź złożenie zamówienia</button>
+    <textarea id="coments" ng-model="receiverData.opinion" cols="78" rows="5"></textarea><br>
+    <div class="text-center">
+    <button type="submit" ng-click="send()" class="btn btn-lg btn-success">Potwierdź złożenie zamówienia</button>
     </div>
-  </div>
+    </form>
+   
 
 		
 	</form>

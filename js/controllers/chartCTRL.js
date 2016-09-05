@@ -1,12 +1,22 @@
 
 
-app.controller('chartCTRL',function($scope,$state){
+app.controller('chartCTRL',function($scope,$state,$rootScope){
 
 	$scope.orderedList = [];
-	$scope.totalPrize = 0;
+	$rootScope.totalPrize = 0;
+
+	$scope.receiverData = {
+		'name': null,
+		'lastName': null,
+		'address': null,
+		'email': null,
+		'payway': null,
+		'opinion': null,
+		'toPay': $rootScope.totalPrize
+	}
+	
 
 	$scope.$on('orderedFood', function(evt,foodOrder){
-
 		$scope.orderedList.push({'name': foodOrder.name,'prize': foodOrder.prize});
 		sum(foodOrder.prize);	
 	});
@@ -18,11 +28,11 @@ app.controller('chartCTRL',function($scope,$state){
 		}
 		var opinion = confirm('czy zakończyłeś już zamówienie?')
 		if (opinion === true){
-			console.log('true');
+			
 			$state.go('payment');
 		}
 		else{
-			console.log('false');
+			
 			return false;
 		}
 
@@ -31,7 +41,7 @@ app.controller('chartCTRL',function($scope,$state){
 	$scope.deleteOrder = function(index){
 		var opinion = confirm('Czy chcesz usunąć to zamówienie z koszyka?');
 		if(opinion === true){
-			$scope.totalPrize -= parseInt($scope.orderedList[index].prize);
+			$rootScope.totalPrize -= parseInt($scope.orderedList[index].prize);
 			$scope.orderedList.splice(index,1);
 		}
 		else{
@@ -39,9 +49,36 @@ app.controller('chartCTRL',function($scope,$state){
 		}
 	}
 
+	$scope.send = function(){
+		console.log($rootScope.totalPrize);
+		if($scope.receiverData.name == null || $scope.receiverData.lastName == null || $scope.receiverData.lastName < 3 || $scope.receiverData.name.length < 3){
+			alert('podane imie bądź nazwisko są nieprawidłowe.');
+			return false;
+		}
+		else if($scope.receiverData.address == null || $scope.receiverData.length < 5){
+				alert('podany adres jest nieprawidłowy');
+				return false;
+		}
+		else if($scope.receiverData.email == null || $scope.receiverData.email.length < 4 || $scope.receiverData.email.indexOf('@') == -1){
+			alert('podany adres email nie jest prawidłowy');
+			return false;
+		}
+		else if($scope.receiverData.payway == null){
+			alert('proszę zaznaczyć sposób płatności');
+		}
+		else{
+			alert('Zamówienie przyjęte do realizacji' + '\n' + 'Imie i nazwisko: ' + $scope.receiverData.name + ' ' + $scope.receiverData.lastName
+			+ "\n" + "adres: " + $scope.receiverData.address + '\n' + 'email: ' + $scope.receiverData.email + '\n' + 'Sposób płatności: ' + $scope.receiverData.payway + '\n' + "Do zapłaty: " + $scope.receiverData.toPay +
+			'zł' + '\n' + 'Szacowany czas zamówienia: 1 godzina' + '\n' + 'Życzymy smacznego!');
+			$state.go('main');
+
+		}
+
+	}
+
 function sum(prize){
-	var lumSum = parseInt(prize);
-	$scope.totalPrize += lumSum;
+	var lumpSum = parseInt(prize);
+	$rootScope.totalPrize += lumpSum;
 }
 	
 
