@@ -5,16 +5,19 @@
 		      <tr>
 		        <th>Nazwa</th>
 		        <th>Cena</th>
+		        <th>Usuń</th>
 		      </tr>
   		   </thead>
   		   <tbody>
-		      <tr ng-repeat="order in orderedList">
+		      <tr ng-repeat="order in orderedList track by $index">
 		        <td>{{order.name}}</td>
 		        <td>{{order.prize}}zł</td>
+		        <td><img ng-click="deleteOrder($index)" class="img-responsive" src="images/redSign.png" alt='usun zamowienie'></td>
 		      </tr>
 		     	<tr class="success">
 		        <td>Razem:</td>
 		        <td>{{totalPrize}}.00zł</td>
+		        <td></td>
 		       </tr>
 	      </tbody>
 			</table>

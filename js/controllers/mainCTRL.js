@@ -1,13 +1,35 @@
 app.controller('mainCTRL',function($scope, $state){
 
+var numberofOrders = 0;
+
 $scope.changeView = function(cuisine){
 	$state.go(cuisine);
 } 
 
 $scope.addToChar = function(name,prize){
-	alert(name + ' ' + prize);
 	$scope.$broadcast('orderedFood',{name,prize});
+	numberofOrders++;
 }
+
+$scope.wantToLeave = function(){
+	
+	if (numberofOrders > 0){
+		var opinion = confirm('W koszyku masz zamówienia. Czy chcesz opuścić stronę?');
+		
+		if (opinion === true){
+			$state.go('main');
+		
+		}
+		else{
+			return false;
+		}
+	}
+	else{
+
+		$state.go('main')
+	}
+}
+
 
 $scope.sushiArr = [{
 		'name': 'tatar z łososia z melonem', 'description': 'Tatar z łososia z dodatkiem melona, truskawek, mięty i migdałówTatar z łososia z dodatkiem melona, truskawek, mięty i migdałówTatar z łososia z dodatkiem melona, truskawek, mięty i migdałów', 'prize': '33,00'

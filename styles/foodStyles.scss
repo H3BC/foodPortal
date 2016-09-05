@@ -93,13 +93,13 @@ footer{
 }
 
 #chart{
-	
+	position: fixed;
 	width: 85%;
-	max-width: 100%;
-	margin-bottom: 100px;
-	
-
-  		
+	max-width: 25%;
+	top: 7%;
+	padding-top: 20em;
+	padding-right: 1em;
+	  		
 }
 
 #footer_content{
@@ -219,6 +219,17 @@ footer{
 
 
 /*MEDIAS*/ 
+
+@media only screen and (max-width: 1000px){
+	#chart{
+		padding-top: 1em;
+		padding-bottom: 2em;
+		padding-right: 0;
+		max-width: 80%;
+		position: relative;
+
+	}
+}
 
 @media only screen and (max-width: 850px){
 	#food_photos{

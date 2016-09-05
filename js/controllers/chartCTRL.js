@@ -12,10 +12,20 @@ app.controller('chartCTRL',function($scope){
 		sum(foodOrder.prize);	
 	});
 
+	$scope.deleteOrder = function(index){
+		var opinion = confirm('Czy chcesz usunąć to zamówienie z koszyka?');
+		if(opinion === true){
+			$scope.totalPrize -= parseInt($scope.orderedList[index].prize);
+			$scope.orderedList.splice(index,1);
+		}
+		else{
+			return false;
+		}
+	}
+
 function sum(prize){
 	var lumSum = parseInt(prize);
 	$scope.totalPrize += lumSum;
-	console.log($scope.totalPrize);
 }
 	
 
