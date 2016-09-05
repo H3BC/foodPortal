@@ -6,6 +6,7 @@ $scope.changeView = function(cuisine){
 
 $scope.addToChar = function(name,prize){
 	alert(name + ' ' + prize);
+	$scope.$broadcast('orderedFood',{name,prize});
 }
 
 $scope.sushiArr = [{

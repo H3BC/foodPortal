@@ -8,23 +8,16 @@
 		      </tr>
   		   </thead>
   		   <tbody>
-		      <tr>
-		        <td>Kluski</td>
-		        <td>22.00</td>
+		      <tr ng-repeat="order in orderedList">
+		        <td>{{order.name}}</td>
+		        <td>{{order.prize}}zł</td>
 		      </tr>
-		      <tr>
-		        <td>Sushi</td>
-		        <td>19.00</td>
-		      </tr>
-		      <tr>
-		        <td>Kebab</td>
-		        <td>13.00</td>
-		      </tr>
-		      <tr class="success">
-		        <td>{{hello}}</td>
-		        <td>{{hello}}</td>
+		     	<tr class="success">
+		        <td>Razem:</td>
+		        <td>{{totalPrize}}.00zł</td>
 		       </tr>
 	      </tbody>
 			</table>
+
 		<span class="btn btn-md btn-info">Przejdź do płacenia</span>
 		</div> <!-- chart -->
