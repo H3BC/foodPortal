@@ -8,6 +8,7 @@ body{
 
 }
 
+/*HTML5 SECTIONS*/
 
 header{
 	background-image: url('/images/pizzaHeader.jpg');
@@ -43,6 +44,8 @@ article{
 footer{
 	background: lighten(#000000, 16%);
 }
+
+/*ID ID ID*/
 
 #steps, #food_photos{
 		padding-top: 4em;
@@ -80,6 +83,25 @@ footer{
 	
 }
 
+
+#foodList{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	h1{
+		font-size: 4.2em;
+	}
+}
+
+#chart{
+	
+	width: 85%;
+	max-width: 100%;
+	margin-bottom: 100px;
+	
+
+  		
+}
+
 #footer_content{
 	padding: 5em;
 	color: darken($white,35%);
@@ -95,9 +117,39 @@ footer{
 		margin: 0px 10px 0px 10px;
 
 	}
+	
+
+}
+
+/*CLASES*/
+
+.product{
+
+	width: 90%;
+	overflow: hidden;
+	max-width: 90%;
+	min-height: 14em;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	border-bottom: 1px dotted grey;
+	/*h2{
+		padding-bottom: 1em;
+	}*/
+
+	&:hover{
+		background: darken($white,5%);
+	};
+	span{
+		font-size: 1.3em;
+	}
+	.btn{
+		background: $main;
+	}
 
 
 }
+
 
 .wrapper{
 	color: $white;
@@ -154,17 +206,19 @@ footer{
 }
 
 .arrow{
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 25px 0 25px 50px;
-margin-left: 220px;
-margin-top: -128px;
-border-color: transparent transparent transparent lighten($red,15%);
-top: 200px;
-bottom: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 0 25px 50px;
+	margin-left: 220px;
+	margin-top: -128px;
+	border-color: transparent transparent transparent lighten($red,15%);
+	top: 200px;
+	bottom: 0;
 }
 
+
+/*MEDIAS*/ 
 
 @media only screen and (max-width: 850px){
 	#food_photos{
@@ -181,3 +235,5 @@ bottom: 0;
 		}
 	}
 }
+
+

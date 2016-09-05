@@ -1,0 +1,23 @@
+<section id="foodList">
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<h1 class="text-center">Pizza</h1>
+			<div class="product" ng-repeat="dish in pizzaArr">
+				<h2>{{dish.name}}</h2>
+				<p>{{dish.description}}</p>
+				<br>
+				<a ng-click="addToChar(dish.name,dish.prize)" class="btn btn-md btn-info">Do koszyka</a>
+				<span class="pull-right">{{dish.prize}}zł</span>
+			</div> 
+		</div> <!-- column -->
+
+		<div class="col-md-3">	
+			<chart-directive></chart-directive> <!-- CHART -->
+		</div> <!-- column -->
+	</div> <!-- row -->
+	<p></p>
+
+	<a href="#" class="btn btn-md btn-info"> ⏎ &nbsp Powrót na stronę główną </a>
+</div> <!-- container -->
+</section>
