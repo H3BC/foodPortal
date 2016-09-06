@@ -1,0 +1,35 @@
+[
+	{
+		"name": "tatar z łososia z melonem", "description": "Tatar z łososia z dodatkiem melona, truskawek, mięty i migdałówTatar z łososia z dodatkiem melona, truskawek, mięty i migdałówTatar z łososia z dodatkiem melona, truskawek, mięty i migdałów", "prize": "33,00"
+		},
+		{
+		"name": "HOSOMAKI", "description": "(jap. hoso “chudy, cienki”, maki “zawijane”) cienkie rolki wypełnione ryżem i jednym składnikiem, od którego pochodzi nazwa danego sushi. Podawane po 6 sztuk.", "prize": "20.00"
+		},
+		{
+		"name": "FUTOMAKI", "description": "grube rolki (jap. futo “grube”), jeden z najbardziej rozpowszechnionych typów sushi. Są wizytówką naszego Sushimastera. Podawane po 6 sztuk.", "prize": "18.00"
+		},
+		{
+		"name": "URAMAKI", "description": "to sushi zawijane “odwrotnie” (jap. uro “odwrotnie”, maki “zawijane”), czyli ryżem na zewnątrz. Podawane po 6 sztuk.", "prize": "22.00"
+		},
+		{
+		"name": "pieczony łosoś 6 szt.", "description": "pieczony łosoś, awokado, majonez ", "prize": "22.00"
+		},
+		{
+		"name": "pieczony węgorz 6 szt.", "description": "pieczony węgorz, majonez, awokado, ogórek ", "prize": "23.00"
+		},
+		{
+		"name": "kalmar w tempurze – łagodnie/ostro 6 szt.", "description": "kalmar w tempurze, majonez, ogórek", "prize": "25.00"
+		},
+		{
+		"name": "crispy salmon 6 szt.", "description": "najdelikatniejsze kawałki łososia pieczone z chrupiącą skórą, majonez, ogórek", "prize": "28.00"
+		},
+		{
+		"name": "panko rolls 6szt", "description": "krewetka w panierce panko, łosoś, rzepa oshinko, ogórek, tykwa, ostry sos", "prize": "37.00"
+		},
+		{
+		"name": "california krab 5 szt", "description": "paluszek krabowy, majonez, awokado, ogórek", "prize": "14.00"
+		},
+		{
+			"name": "rainbow 5 szt.", "description": "paluszek krabowy, ogórek, tamago zawinięte w łososia, tuńczyka, maślaną i awokado", "prize": "14.00"
+		}
+	]

@@ -1,0 +1,14 @@
+[
+	{"name": "Pieczeń z dzika","description": "Cięta na plastry pieczeń z dzika w sosie własnym, intensywnie ziołowa.", "prize": "42.00"},
+	{"name": "Gulasz z dzika","description": "Aromatyczny gulasz z dzika z plastrami marchewki.", "prize": "38.00"},
+	{"name": "Przepiórka z figami.","description": "Pieczona w całości przepiórka nadziewana figami w słodkawym, figowym sosie.", "prize": "52.00"},
+	{"name": "Kaczka z jabłkami","description": "Pieczona pierś z kaczki w miodowo-cynamonowym sosie z podsmażonymi jabłkami, majerankiem i żurawiną.", "prize": "48.00"},
+	{"name": "Gęś pieczona","description": "Kładziona na włoskiej kapuście, pieczona pierś z gęsi w sosie z jesiennych owoców, serwowana z kaszą gryczaną i winną sałatką z czerwonej kapusty.", "prize": "50.00"},
+	{"name": "Placki ziemniaczane z łososiem","description": "Placki ze świeżo utartych ziemniaków podane z wędzonym łososiem, kremowym musem łososiowym, kaparami i kawiorem.", "prize": "29.00"},
+	{"name": "polędwiczki arabskie","description": "polędwiczki z kurczaka w płatkach kukurydzianych, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "17.00"},
+	{"name": "Cielęcina z bakłażanem w sosie pomidorowym","description": "z talarkami ziemniaków oraz czosnkiem, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "18.00"},
+	{"name": "Barszcz czerwony z kołdunem","description": "Ukiszony domowym sposobem barszcz z kołdunami nadziewanymi baraniną i wołowiną.", "prize": "15.00"},
+	{"name": "Zupa ze świeżych pomidorów","description": "Aromatyczna zupa ze świeżych pomidorów z domowymi kluseczkami i listkiem bazylii.", "prize": "17.00"},
+	{"name": "Sałata z kozim serem","description": "Kozi ser, orzechy włoskie, grzanki.", "prize": "23.00"},
+	{"name": "Nugat lwowski","description": "Wafle przekładane masą kajmakową maczane w płynnej czekoladzie.", "prize": "13.00"}
+]

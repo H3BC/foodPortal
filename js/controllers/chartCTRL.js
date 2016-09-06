@@ -1,9 +1,9 @@
 
 
-app.controller('chartCTRL',function($scope,$state,$rootScope){
+app.controller('chartCTRL',function($scope,$state,prizeFactory){
 
 	$scope.orderedList = [];
-	$rootScope.totalPrize = 0;
+	$scope.totalPrize = 0;
 
 	$scope.receiverData = {
 		'name': null,
@@ -11,8 +11,7 @@ app.controller('chartCTRL',function($scope,$state,$rootScope){
 		'address': null,
 		'email': null,
 		'payway': null,
-		'opinion': null,
-		'toPay': $rootScope.totalPrize
+		'opinion': null
 	}
 	
 
@@ -41,7 +40,7 @@ app.controller('chartCTRL',function($scope,$state,$rootScope){
 	$scope.deleteOrder = function(index){
 		var opinion = confirm('Czy chcesz usunąć to zamówienie z koszyka?');
 		if(opinion === true){
-			$rootScope.totalPrize -= parseInt($scope.orderedList[index].prize);
+			$scope.totalPrize -= parseInt($scope.orderedList[index].prize);
 			$scope.orderedList.splice(index,1);
 		}
 		else{
@@ -50,7 +49,7 @@ app.controller('chartCTRL',function($scope,$state,$rootScope){
 	}
 
 	$scope.send = function(){
-		console.log($rootScope.totalPrize);
+		console.log($scope.totalPrize);
 		if($scope.receiverData.name == null || $scope.receiverData.lastName == null || $scope.receiverData.lastName < 3 || $scope.receiverData.name.length < 3){
 			alert('podane imie bądź nazwisko są nieprawidłowe.');
 			return false;
@@ -68,7 +67,7 @@ app.controller('chartCTRL',function($scope,$state,$rootScope){
 		}
 		else{
 			alert('Zamówienie przyjęte do realizacji' + '\n' + 'Imie i nazwisko: ' + $scope.receiverData.name + ' ' + $scope.receiverData.lastName
-			+ "\n" + "adres: " + $scope.receiverData.address + '\n' + 'email: ' + $scope.receiverData.email + '\n' + 'Sposób płatności: ' + $scope.receiverData.payway + '\n' + "Do zapłaty: " + $scope.receiverData.toPay +
+			+ "\n" + "adres: " + $scope.receiverData.address + '\n' + 'email: ' + $scope.receiverData.email + '\n' + 'Sposób płatności: ' + $scope.receiverData.payway + '\n' + "Do zapłaty: " + prizeFactory.totalPrize +
 			'zł' + '\n' + 'Szacowany czas zamówienia: 1 godzina' + '\n' + 'Życzymy smacznego!');
 			$state.go('main');
 
@@ -78,7 +77,8 @@ app.controller('chartCTRL',function($scope,$state,$rootScope){
 
 function sum(prize){
 	var lumpSum = parseInt(prize);
-	$rootScope.totalPrize += lumpSum;
+	prizeFactory.totalPrize = prizeFactory.totalPrize + lumpSum;
+	$scope.totalPrize += lumpSum;
 }
 	
 

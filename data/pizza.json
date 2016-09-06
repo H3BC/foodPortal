@@ -1,0 +1,12 @@
+[
+	{"name": "PEPPERONI","description": "Kiełbasa pepperoni, ser mozzarella, ziołowy sos pomidorowy", "prize": "19.00"},
+	{"name": "HAWAJSKA","description": "Szynka, ser mozzarella, ananas, ziołowy sos pomidorowy", "prize": "20.00"},
+	{"name": "WEGETARIAŃSKA","description": "Brokuły, zielona papryka, pomidory, kukurydza, ser mozzarella, ziołowy sos pomidorowy", "prize": "18.00"},
+	{"name": "MARGHERITA","description": "Ser mozzarella, ziołowy sos pomidorowy", "prize": "17.00"},
+	{"name": "AMERICANA","description": "Pieczarki, ser mozzarella, pomidory, ziołowy sos pomidorowy", "prize": "21.00"},
+	{"name": "FARMERSKA","description": "Grillowany kurczak, ser mozzarella, zielona papryka, pieczarki, cebula, ziołowy sos pomidorowy", "prize": "22.00"},
+	{"name": "MIĘSNA","description": "Wołowina, wieprzowina, kiełbasa pepperoni, ser mozzarella, ziołowy sos pomidorowy", "prize": "23.00"},
+	{"name": "CAPRICCIOSA","description": "Szynka, ser mozzarella, pieczarki, pomidorki koktajlowe, zielone oliwki, ziołowy sos pomidorowy", "prize": "20.00"},
+	{"name": "PROWANSALSKA","description": "Ser mozzarella, kurczak marynowany w czosnku i ziołach prowansalskich, grillowane warzywa - cukinia, czerwona cebula, kolorowe papryki czerwona, zielona i żółta, ziołowy sos pomidorowy", "prize": "23.00"},
+	{"name": "SUPREME","description": "Wołowina, kiełbasa pepperoni, ser mozzarella, zielona papryka, pieczarki, cebula, ziołowy sos pomidorowy", "prize": "24.00"}
+]

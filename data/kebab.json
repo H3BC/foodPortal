@@ -1,0 +1,12 @@
+[
+	{"name": "Kebab z kurczaka","description": "mięso z kurczaka, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "16.00"},
+	{"name": "Danie Kebab z wołowiny","description": "mięso z wołowiny, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "15.00"},
+	{"name": "Kebab z wołowiny z serem","description": "mięso z wołowiny, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, ser, sos", "prize": "18.00"},
+	{"name": "Byrak z mięsem","description": "6 sztuk smażonych pierożków nadziewanych mięsem i przyprawami", "prize": "12.00"},
+	{"name": "Falafel","description": "chleb cienki pita, falafel, surówka, sos", "prize": "11.00"},
+	{"name": "Falafel na talerzu","description": "falafel na talerzu, zestaw surówek, sos", "prize": "15.00"},
+	{"name": "polędwiczki arabskie","description": "polędwiczki z kurczaka w płatkach kukurydzianych, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "17.00"},
+	{"name": "Cielęcina z bakłażanem w sosie pomidorowym","description": "z talarkami ziemniaków oraz czosnkiem, frytki, ryż, makaron, ziemniaki lub kasze do wyboru, zestaw surówek, sos", "prize": "18.00"},
+	{"name": "Pomidorowy filet po turecku","description": "filet z kurczaka z sosem pomidorowym z grilla w mieszance przypraw tureckich", "prize": "20.00"},
+	{"name": "Polędwiczki Syryjskie w orientalnym smaku","description": "polędwiczki z kurczaka w sosie jogurtowym , oregano oraz z przyprawami", "prize": "19.00"}	
+]
